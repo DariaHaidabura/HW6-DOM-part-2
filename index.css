@@ -1,0 +1,51 @@
+div {
+  margin-left: 25%;
+  margin-top: 30px;
+  vertical-align:middle;
+}
+select {
+  width: 300px;
+  height: 35px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+}
+
+button {
+  width: 60px;
+  height: 35px;
+}
+
+#sq {
+  display: none;
+	width: 100px;
+	height: 100px;
+	background: black;
+}
+
+#rect {
+  display: none;
+	width: 200px;
+	height: 100px;
+	background: black;
+}
+
+#circ {
+  display: none;
+  width: 100px; 
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  }
+
+  input, select {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.content {
+  margin-top: 100px;
+  margin-left: 358px;
+}

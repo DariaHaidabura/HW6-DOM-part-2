@@ -18,34 +18,31 @@ button {
   height: 35px;
 }
 
-#sq {
-  display: none;
+.square-figure {
 	width: 100px;
 	height: 100px;
-	background: black;
+	background-color: black;
 }
 
-#rect {
-  display: none;
+.rectangle-figure {
 	width: 200px;
 	height: 100px;
-	background: black;
+	background-color: black;
 }
 
-#circ {
-  display: none;
+.circle-figure {
   width: 100px; 
   height: 100px;
-  background: black;
+  background-color: black;
   border-radius: 50%;
   }
 
-  input, select {
+  input {
     display:inline-block;
     vertical-align:middle;
 }
 
-.content {
+ figure {
   margin-top: 100px;
   margin-left: 358px;
 }

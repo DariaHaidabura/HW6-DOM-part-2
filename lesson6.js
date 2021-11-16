@@ -1,34 +1,20 @@
-  let select = document.getElementById("selectForm");
-  let activeElem;
-  let activeColor;
+let input = document.getElementById("color-btn");
+let figures = document.getElementById("figures");
+let optionList = document.getElementById("figures-list");
+let button = document.getElementById("button-click");
 
-  select.addEventListener("change", function() {
-    if (activeElem) {
-      hideElement(activeElem);
+optionList.addEventListener('click', function() {
+    if (optionList.value === 'square') {
+        figures.className = "square-figure";
+    } else if (optionList.value === 'rectangle') {
+        figures.className = "rectangle-figure";
+    } else if (optionList.value === 'circle') {
+        figures.className = "circle-figure";
+    } else {
+        figures.style.backgroundColor = "black";
     }
-    activeElem = document.getElementById(select.value);
-    displayElement(activeElem); 
-  });
-  
-  function displayElement() {
-    activeElem.style.display = 'flex';
-    activeElem.style.background = activeColor;
-  }
+});
 
-  function hideElement() {
-    activeElem.style.display = 'none';
-  }
-
-  colorBtn.addEventListener("click", function() {
-    let color = document.getElementById("colorPicker").value;
-    changeColor(color);
-  })
-
-  function changeColor(color) {
-    if (activeElem) {
-      activeElem.style.background = color;
-    }
-    activeColor = color;
-  }
-    
- 
+button.addEventListener('click', function() {
+    figures.style.backgroundColor = input.value;
+})
